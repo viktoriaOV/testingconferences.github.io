@@ -1,13 +1,9 @@
 ---
 layout: default
-permalink: /search/
 ---
 <!-- review this: http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/
 Need to figure out how this will work and how it searches both current and past data -->
 
-<p>Welcome to the Search page.
-
-<p>Put your search query below:
 <form action="/search.html" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
@@ -18,13 +14,11 @@ Need to figure out how this will work and how it searches both current and past 
 
 <script>
   window.store = {
-    {% for post in site.data.current %}
-      "{{ post.url | slugify }}": {
-        //"name": "{{ current.name | xml_escape }}",
-        //"author": "{{ post.author | xml_escape }}",
-        //"category": "{{ post.category | xml_escape }}",
-        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
+    {% for p in site.data.current %}
+      "{{ current.url | slugify }}": {
+        "name": "{{ current.name | xml_escape }}",
+        "location": "{{ current.location | xml_escape }}",
+        "url": "{{ current.url | xml_escape }}"
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
