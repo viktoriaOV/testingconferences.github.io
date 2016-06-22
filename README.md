@@ -9,14 +9,10 @@ The list of events is driven by files in the ```_data``` folder - if you have an
   - Include the year
     - Sometimes workshops use a version instead of a the year
       - Example: Workshop on Performance and Reliability (WOPR) 24
-  - Don't include the @ symbol for the twitter handle. If there is no twitter option, leave it blank
+  - Don't include the @ symbol for the twitter handle. If there is no twitter option, leave it blank.
 
 ## Eligible Conferences and Workshops
 
 Focus is a goal of this project and as a result, only conferences and workshops that are specifically for software testing are listed. That means that if a conference covers software testing, but is not specifically for testers, then it is left out.
 
 A good rule of thumb for whether a conference should be included is if its name includes either Testing or Test and how it describes itself.
-
-_A separate repo_
-
-At the moment the repository is under my Github account (as you can see). In the near future I'd like to broaden things a bit by transferring it into a separate organization where many people could help guide it’s path.
