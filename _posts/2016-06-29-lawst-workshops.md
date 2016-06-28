@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "LAWST-style Workshops"
-date:   2016-06-22 09:35:00
+date:   2016-06-29 09:35:00
 categories: news
 ---
 
